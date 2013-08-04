@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>This weekend</title>
+    <title>Date Night As A Service</title>
+<link rel='stylesheet' href='bootstrap/css/bootstrap.css'>
+
 </head>
-<body>
-    <h1>What do you want to do? 
+<body style = "margin-top:40px;">
+         <div class="hero-unit">
+            <h1>DNAAS</h1>
+             <h2>Date Night As A Service</h2>
+             <p> Like <a href="http://foaas.herokuapp.com/">FOAAS</a> but much sweeter</p>
+        </div>
+        <div class="container">
+                 <h2>Introduction</h2>
+                    <p> DNAAS (Date Night As A Service) provides a modern, scalable solution to the common problem of organising Date Night </p>
 
-        trip/name/from
-
-        food/name/from
-</body>
+                <h2>API</h2>
+                <h3>/:to/:place/:from</h3>
+                <p>Will return content of the form ':To, come with me to :place? - :from x', e.g. /Chloe/Nadia will return 'Chloe, come with me to Paris? - Nadia x' </p>
+                <h3>/frankscafe/:to/:when/:time/:from</h3>
+                <p>Will return content of the form ':To, :when i'm taking you to Frank's Cafe. Meet me there at :time - :from x', e.g. /Chloe/tonight/8pm/Nadia will return 'Chloe, Tonight i am taking you to Frank's Cafe. Meet me there at 8pm - Nadia x' </p>
+                <h3>/bounce/:to/:when/:time/:from</h3>
+                <p>Will return content of the form ':To, :when i'm taking you to Bounce. Meet me there at :time - :from x', e.g. /Chloe/tonight/8pm/Nadia will return 'Chloe, Tonight i am taking you to Bounce. Meet me there at 8pm - Nadia x' </p>
+            </div>
+        </div>
+    </body>
 </html>

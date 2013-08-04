@@ -4,23 +4,31 @@ get '/' do
     erb :index
 end
 
-
-get '/:name' do
-    @name=params[:name].capitalize
-    erb :shopping
+get '/:to/:place/:from' do
+    @to=params[:to].capitalize
+    @message = "Come with me to"
+    @place=params[:place].capitalize
+    @from=params[:from].capitalize
+    erb :weregoingout
 end
 
-get '/food/:name/:from' do
-    @name=params[:name].capitalize
+get '/frankscafe/:to/:when/:time/:from' do
+    @to=params[:to].capitalize
+    @when=params[:when].capitalize
+    @message = "I'm taking you to Frank's Cafe"
+    @message2 = "Meet me there at"
+    @time=params[:time]
     @from=params[:from].capitalize
-    @message = "Tonight i fancy"
-    erb :shopping
+    erb :datenight
     
 end
 
-get '/trip/:name/:from' do
-    @name=params[:name].capitalize
+get '/bounce/:to/:when/:time/:from' do
+    @to=params[:to].capitalize
+    @when=params[:when].capitalize
+    @message = "I'm taking you to Bounce"
+    @message2 = "Meet me there at"
+    @time=params[:time]
     @from=params[:from].capitalize
-    @message = "I want to go to the "
-    erb :shopping
+    erb :datenight
 end
