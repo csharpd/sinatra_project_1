@@ -1,0 +1,46 @@
+.hero-unit h1 {
+margin-bottom: 0;
+font-size: 60px;
+line-height: 1;
+color: inherit;
+letter-spacing: -1px;
+}
+
+.container {
+margin-right: auto;
+margin-left: auto;
+}
+
+div {
+display: block;
+}
+
+#firstsection{ 
+    height: 700px;
+    background-image:url("<%= @picture %>");
+    background-size: 100%;
+}
+
+h1 { color: white
+    text: center;
+    margin-bottom: 5px;
+    font-size: 44px;
+}
+
+#picture2{
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+}
+
+#sunset{
+    max-height: 70%;
+    display: block;
+    margin-left: auto;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+}

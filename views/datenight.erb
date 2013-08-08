@@ -3,18 +3,21 @@
     <head>
         <title> Date Night with <%=@from%></title>
         <link rel='stylesheet' href='/bootstrap/css/bootstrap.css'>
-        <link rel="stylesheet" type="text/css" href="css/datenight.css" />
+        <link rel="stylesheet" type="text/css" href='/css/datenight.css'>
     </head>
 
     <body style = "margin-top:140px;">
         <div class="container">
+            <div id='firstsection'>
                     <h1> <%=@to%>,</h1>
-                    <h1> <%=@when%> <%=@message%>.</h1>
+                    <h1> <%=@when%> I'm taking you to <a href="<%=@place_url%>" ><%=@place%></a>.</h1>
                     <h1> <%=@message2%> <%=@time%>.</h1>
                     <p>
                         <em> - <%=@from%> x </em> 
                     </p>
+                    <img id='picture2'src="<%= @picture %>">
                 </div>
+             </div>
              </div>
         </div>
     </body>
