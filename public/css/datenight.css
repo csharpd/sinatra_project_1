@@ -17,7 +17,7 @@ display: block;
 
 #firstsection{ 
     height: 700px;
-    background-image:url("<%= @picture %>");
+    color: white;
     background-size: 100%;
 }
 

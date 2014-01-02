@@ -4,6 +4,12 @@
         <title> Date Night with <%=@from%></title>
         <link rel='stylesheet' href='/bootstrap/css/bootstrap.css'>
         <link rel="stylesheet" type="text/css" href='/css/datenight.css'>
+
+        <style type="text/css">
+            #firstsection {
+            background-image:url("<%= @picture %>"); }
+        </style>
+
     </head>
 
     <body style = "margin-top:140px;">
@@ -15,7 +21,6 @@
                     <p>
                         <em> - <%=@from%> x </em> 
                     </p>
-                    <img id='picture2'src="<%= @picture %>">
                 </div>
              </div>
              </div>
